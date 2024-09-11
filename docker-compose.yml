@@ -5,9 +5,9 @@ services:
       dockerfile: Dockerfile
     container_name: php-apache
     ports:
-      - "8080:80"
+      - "80:80"
     volumes:
-      - ./src:/var/www/html
+      - ./:/var/www/html
     depends_on:
       - db
 
